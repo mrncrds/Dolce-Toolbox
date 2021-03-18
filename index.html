@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dolce Stil Criollo</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="border-shadow"></div>
+    <video id="border-video" width="1" height="1" preload autoplay muted loop>
+      <source src="assets/video1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="toolbox">
+      <div class="toolbox-content">
+        <p id="title">PLAY</p>
+        <p id="toolbox-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempora incididunt ut labore et dolor.</p>
+          <div class="camera-container">
+            <img src="assets/icons/arrow-left.svg" alt="Arrow" width="10" id="arrow-left">
+            <p id="camera-location">McAllen-Hidalgo Bridge, Texas, United States</p>
+            <img src="assets/icons/arrow-right.svg" alt="Arrow" width="10" id="arrow-right">
+          </div>
+          <div class="toolbox-slider">
+            <input type="range" min="20" max="140" value="70" class="slider" id="myRange">
+          </div>
+          <div class="tool-container">
+            <div class="tool-item" id="spray">
+              <img src="assets/icons/spray.svg" alt="Spray tool">
+            </div>
+            <div class="tool-item" id="smudge">
+              <img src="assets/icons/smudge.svg" alt="Smudge tool">
+            </div>
+            <div class="tool-item" id="sticker-1">
+              <img src="assets/brushes/dolce-stil-criollo-brush1.svg" alt="sticker-1" width="60" height="60">
+            </div>
+            <div class="tool-item" id="sticker-2">
+              <img src="assets/brushes/dolce-stil-criollo-brush2.svg" alt="sticker-2" width="60" height="60">
+            </div>
+            <div class="tool-item" id="sticker-3">
+              <img src="assets/brushes/dolce-stil-criollo-brush3.svg" alt="sticker-3" width="60" height="60">
+            </div>
+            <div class="tool-item" id="sticker-4">
+              <img src="assets/brushes/dolce-stil-criollo-brush4.svg" alt="sticker-4" width="60" height="60">
+            </div>
+            <div class="tool-item" id="sticker-5">
+              <img src="assets/brushes/dolce-stil-criollo-brush5.svg" alt="sticker-5" width="60" height="60">
+            </div>
+            <div class="tool-item" id="sticker-6">
+              <img src="assets/brushes/dolce-stil-criollo-brush6.svg" alt="sticker-6" width="60" height="60">
+            </div>
+            <div class="tool-item" id="sticker-7">
+              <img src="assets/brushes/dolce-stil-criollo-brush7.svg" alt="sticker-7" width="60" height="60">
+            </div>
+            <div class="tool-item" id="sticker-8">
+              <img src="assets/brushes/dolce-stil-criollo-brush8.svg" alt="sticker-8" width="60" height="60">
+            </div>
+            <div class="tool-item" id="sticker-9">
+              <img src="assets/brushes/dolce-stil-criollo-brush9.svg" alt="sticker-9" width="60" height="60">
+            </div>
+            <div class="tool-item" id="sticker-10">
+              <img src="assets/brushes/dolce-stil-criollo-brush10.svg" alt="sticker-10" width="60" height="60">
+            </div>
+            <div class="tool-item" id="sticker-11">
+              <img src="assets/brushes/dolce-stil-criollo-brush11.svg" alt="sticker-11" width="60" height="60">
+            </div>
+            <div class="tool-item" id="sticker-12">
+              <img src="assets/brushes/dolce-stil-criollo-brush12.svg" alt="sticker-12" width="60" height="60">
+            </div>
+          </div>
+          <div class="tool-carousel"></div>
+          <button type="button" id="save-button">SAVE IMAGE</button>
+      </div>
+    </div>
+    <script src="brush.js"></script>
+  	<script src="sketch.js"></script>
+  </body>
+</html>

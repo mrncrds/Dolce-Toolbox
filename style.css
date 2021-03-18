@@ -1,0 +1,178 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial Narrow;
+  overflow-x: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+.border-shadow {
+  position: relative;
+  z-index: 4;
+  width: auto;
+  height: 860px;
+  -moz-box-shadow: inset 0 0 30px 20px #000;
+  -webkit-box-shadow: inset 0 0 30px 20px #000;
+  box-shadow: inset 0 0 30px 20px #000;
+}
+
+/* TOOLBOX */
+.toolbox {
+  position: absolute;
+  z-index: 5;
+  right: 2.7vh;
+  top: 2.2vh;
+  width: 170px;
+  height: 780px;
+  padding: 20px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 20px;
+  -moz-box-shadow: 0 0 20px 0 #000;
+  -webkit-box-shadow: 0 0 20px 0 #000;
+  box-shadow: 0 0 20px 0 #000;
+  line-height: 1.2em;
+}
+
+.toolbox-content {
+  position: relative;
+}
+
+#title {
+  font-size: 26px;
+  text-align: center;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+#toolbox-description {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+/* CAMERA DESCRIPTION */
+.camera-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+#camera-location {
+  width: 150px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.1em;
+}
+
+#arrow-left, #arrow-right {
+  cursor: pointer;
+}
+
+/* SLIDER */
+.toolbox-slider {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;  
+  appearance: none;
+  width: 98%; 
+  height: 5px; 
+  background: #fff; 
+  outline-style: solid;
+  outline-color: #000;
+  outline-width: thin; 
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 8px; 
+  height: 18px; 
+  background: #000; 
+  cursor: pointer; 
+}
+
+.slider::-moz-range-thumb {
+  width: 8px; 
+  height: 18px; 
+  background: #000; 
+  cursor: pointer; 
+}
+
+/* TOOL ICONS */
+.tool-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.tool-item {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.tool-item:hover {
+  background-color: #d9d9d9;
+  border-radius: 50px;
+  -moz-box-shadow: 0 0 20px 5px #c2c2c2;
+  -webkit-box-shadow: 0 0 20px 5px #c2c2c2;
+  box-shadow: 0 0 20px 5px #c2c2c2;
+  cursor: pointer;
+}
+
+/* CAROUSEL */
+/*.tool-carousel {
+  background-color: #4bf542;
+  height: 15px;
+}*/
+
+/* BUTTON */
+#save-button {
+  margin-top: 10px;
+  border: none;
+  background-color: #000;
+  width: 100%;
+  height: 35px;
+  border-radius: 50px;
+  font-family: Arial Narrow;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  /*transition-duration: 0.3s;*/
+}
+
+#save-button:hover {
+  background-color: #fff;
+  border: solid 1px #000;
+  color: #000;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .toolbox {
+  left: 2.7vh;
+  width: auto;
+  height: auto;
+  padding: 30px;
+  }
+
+  #camera-location {
+    width: 200px;
+  }
+
+  .tool-item {
+    margin: 8px;
+  }
+}
