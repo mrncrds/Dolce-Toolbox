@@ -94,7 +94,7 @@ function setup() {
   imageX = 0;
   imageY = 0;
 
-  clearCanvas(); // Button to clear canvas
+  clearCanvas(); // button to clear canvas
   saveImage(); // button to save image
 }
 
@@ -125,14 +125,14 @@ function draw() {
 }
 
 function clearCanvas() {
-  clearButton = select("#clear-button")
+  clearButton = select("#clear-button");
   clearButton.mousePressed(function () {
     brushes.splice(0, brushes.length);
   });
 }
 
 function saveImage() {
-  saveButton = select("#save-button")
+  saveButton = select("#save-button");
   saveButton.mousePressed(function () {
     save('Border-Theatrics.png');
   });
