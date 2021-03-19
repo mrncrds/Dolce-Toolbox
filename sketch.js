@@ -1,6 +1,6 @@
 
 let canvas;
-let windowH = 860;
+let windowH = 900;
 let counter;
 let arrayVideos = ["assets/video1.mp4", "assets/video2.mp4", "assets/video3.mp4"];
 let arrayLocation = ["McAllen-Hidalgo Bridge, Texas, United States", "Camera2 Location", "Camera3 Location"];
@@ -11,7 +11,7 @@ let slider;
 let spray, smudge, sprayTool, smudgeTool;
 let smudgeIsClicked = false;
 let tool;
-let numStickers = 12
+let numStickers = 12;
 let sticker = [];
 let stickerList = [];
 let brushes = [];

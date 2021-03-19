@@ -4,7 +4,6 @@
   	<meta charset="utf-8">
   	<meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Dolce Stil Criollo</title>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -25,7 +24,7 @@
             <img src="assets/icons/arrow-right.svg" alt="Arrow" width="10" id="arrow-right">
           </div>
           <div class="toolbox-slider">
-            <input type="range" min="20" max="140" value="70" class="slider" id="myRange">
+            <input type="range" min="30" max="200" value="70" class="slider" id="myRange">
           </div>
           <div class="tool-container">
             <div class="tool-item" id="spray">
@@ -71,8 +70,15 @@
               <img src="assets/brushes/dolce-stil-criollo-brush12.svg" alt="sticker-12" width="60" height="60">
             </div>
           </div>
-          <div class="tool-carousel"></div>
-          <button type="button" id="save-button">SAVE IMAGE</button>
+          <div class="tool-carousel">
+            <div id="carousel-dot"></div>
+            <div id="carousel-dot"></div>
+            <div id="carousel-dot"></div>
+          </div>
+          <!-- <div class="toolbox-buttons"> -->
+            <button type="button" id="clear-button">CLEAR</button>
+            <button type="button" id="save-button">SAVE IMAGE</button>
+          <!-- </div> -->
       </div>
     </div>
     <script src="brush.js"></script>
