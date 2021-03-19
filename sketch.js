@@ -37,6 +37,7 @@ function setup() {
 
   counter = 0;
   borderVideo = select("#border-video"); // get html video tag
+  borderVideo.position(0, 0);
   cameraLocation = select("#camera-location"); // camera location description
 
   // change video with toolbox arrows
@@ -60,7 +61,6 @@ function setup() {
     }
     borderVideo.attribute("src", arrayVideos[counter]);
     cameraLocation.html(arrayLocation[counter]);
-    // console.log(counter);
   });
 
   tool = sprayTool; // start with spray tool
