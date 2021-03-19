@@ -23,10 +23,10 @@ canvas {
 .toolbox {
   position: absolute;
   z-index: 5;
-  right: 2.5vh;
-  top: 2.5vh;
+  right: 3vh;
+  top: 2.2vh;
   width: 170px;
-  height: 810px;
+  height: 820px;
   padding: 20px;
   background: #fff;
   overflow: hidden;
@@ -139,20 +139,22 @@ canvas {
   align-content: center;
   align-items: center;
   height: 10px;
+  margin-bottom: 5px;
   /*background-color: #4bf542;*/
 }
 
 #carousel-dot {
   margin: 4px;
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   border-radius: 50px;
-  background-color: #000;
+  border: solid 1px #000;
+  background-color: #fff;
 }
 
 /* BUTTONS */
 #clear-button, #save-button {
-  margin-top: 5px;
+  margin-top: 7px;
   background-color: #fff;
   width: 100%;
   height: 35px;

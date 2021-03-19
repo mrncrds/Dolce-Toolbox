@@ -49,7 +49,6 @@ function setup() {
     }
     borderVideo.attribute("src", arrayVideos[counter]);
     cameraLocation.html(arrayLocation[counter]);
-    // console.log(counter);
   });
 
   arrowLeft = select("#arrow-left");
@@ -94,6 +93,8 @@ function setup() {
   
   imageX = 0;
   imageY = 0;
+
+  clearCanvas(); // Button to clear canvas
   saveImage(); // button to save image
 }
 
@@ -123,9 +124,16 @@ function draw() {
   }
 }
 
+function clearCanvas() {
+  clearButton = select("#clear-button")
+  clearButton.mousePressed(function () {
+    brushes.splice(0, brushes.length);
+  });
+}
+
 function saveImage() {
-  button = select("#save-button")
-  button.mousePressed(function () {
+  saveButton = select("#save-button")
+  saveButton.mousePressed(function () {
     save('Border-Theatrics.png');
   });
 }
